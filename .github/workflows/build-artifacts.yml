@@ -193,7 +193,8 @@ jobs:
           STABLE_PATH: ${{ needs.build-prep.outputs.is-stable }}
           CHART_VERSION: ${{ needs.build-prep.outputs.chart-version }}
         run: |
-          jfrog rt upload "charts/.packaged/${CHART_NAME}-${CHART_VERSION}.tgz" "${CHART_REPOSITORY}/${STABLE_PATH}/${CHART_NAME}/"
+          cd charts/.packaged
+          jfrog rt upload "${CHART_NAME}-${CHART_VERSION}.tgz" "${CHART_REPOSITORY}/${STABLE_PATH}/${CHART_NAME}/"
 
       - name: Upload Helm Chart as Build Artifact
         uses: actions/upload-artifact@v2
