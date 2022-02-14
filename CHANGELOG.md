@@ -11,6 +11,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 - Converted repository to just cray-import-kiwi-recipe-image, using GH actions and workflows to build (CASMCMS-7812)
 - Converted repository to CSM gitflow development process (CASMCMS-7812)
+- Updated GH artifact retention to 90 days for chart
 
 ### Removed
 
