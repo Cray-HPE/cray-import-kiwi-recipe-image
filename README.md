@@ -1,4 +1,4 @@
-# cray-import-config
+# cray-import-kiwi-recipe-image
 
 This repository contains the cray-import-kiwi-recipe-image base chart used in the product install workflow.
 

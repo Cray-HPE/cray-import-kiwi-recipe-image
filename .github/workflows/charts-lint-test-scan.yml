@@ -3,7 +3,7 @@ on:
   pull_request:
     branches:
       - master
-      - release/**
+      - develop
   schedule:
     - cron: "0 0 * * *"
   workflow_dispatch:
