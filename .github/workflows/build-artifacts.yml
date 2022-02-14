@@ -191,24 +191,17 @@ jobs:
         shell: bash
         env:
           STABLE_PATH: ${{ needs.build-prep.outputs.is-stable }}
-          CHARTS_PATH: charts/.packaged
-          CHARTS_PATTERN: "*.tgz"
           CHART_VERSION: ${{ needs.build-prep.outputs.chart-version }}
         run: |
-          jfrog rt upload "charts/.packaged/${CHART_NAME}-${CHART_VERSION}.tgz" "${CHART_REPOSITORY}/${STABLE_PATH}/${CHART_NAME}/"
-
-          # Provide links for downloading
-          for packaged_chart in $(find charts/.packaged -mindepth 1 -maxdepth 1); do
-            CHART_FILE_NAME=$(basename "$packaged_chart")
-            echo "Download link: https://artifactory.algol60.net/artifactory/$TARGET_PATTERN$CHART_FILE_NAME"
-          done
+          cd charts/.packaged
+          jfrog rt upload "${CHART_NAME}-${CHART_VERSION}.tgz" "${CHART_REPOSITORY}/${STABLE_PATH}/${CHART_NAME}/"
 
       - name: Upload Helm Chart as Build Artifact
         uses: actions/upload-artifact@v2
         with:
           name: helm-chart
           path: charts/.packaged/${{ env.CHART_NAME }}-${{ needs.build-prep.outputs.chart-version }}.tgz
-          retention-days: 7
+          retention-days: 90
 
   publish-artifacts:
     runs-on: ubuntu-latest
