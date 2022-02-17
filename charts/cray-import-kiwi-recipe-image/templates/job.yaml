@@ -87,7 +87,7 @@ spec:
           name: catalog-overlay
       {{- if gt (len .Values.import_job.IMS_TEMPLATE_DICTIONARY) 0 }}
         - name: template-dictionary
-          mountPath: /
+          mountPath: /mnt/image-recipe-import/
       {{- end }}
         env:
         - name: DOWNLOAD_PATH

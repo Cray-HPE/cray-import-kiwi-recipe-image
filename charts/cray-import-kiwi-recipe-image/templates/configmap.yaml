@@ -31,7 +31,7 @@ metadata:
   labels:
     app.kubernetes.io/name: cray-ims
 data:
-  template_dictionary:
+  template_dictionary: |
     {{- with .Values.import_job.IMS_TEMPLATE_DICTIONARY -}}
     {{ toYaml . | nindent 4 -}}
     {{- end }}
