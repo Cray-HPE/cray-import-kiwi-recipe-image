@@ -5,6 +5,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ## [Unreleased]
 
+## [3.0.1] - 2022-02-17
+
+### Added
+
+- Include additional changes for CASMCMS-7676 (IMS templating) missed during repo conversion
+
 ## [3.0.0] - 2022-02-14
 
 ### Changed
@@ -30,8 +36,9 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 - See https://github.com/Cray-HPE/cray-product-install-charts for this release and prior.
 
 
-[Unreleased]: https://github.com/Cray-HPE/cray-import-kiwi-recipe-image/compare/v3.0.0...HEAD
+[Unreleased]: https://github.com/Cray-HPE/cray-import-kiwi-recipe-image/compare/v3.0.1...HEAD
 
+[3.0.1]: https://github.com/Cray-HPE/cray-import-kiwi-recipe-image/compare/v3.0.0...v3.0.1
 
 [3.0.0]: https://github.com/Cray-HPE/cray-import-kiwi-recipe-image/compare/v2.0.0...v3.0.0
 
