@@ -5,6 +5,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ## [Unreleased]
 
+## [3.0.2] - 2022-03-04
+
+### Changed
+
+- Use github public ubuntu runner instead of self-hosted on public repos.
+
 ## [3.0.1] - 2022-02-17
 
 ### Added
@@ -36,7 +42,9 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 - See https://github.com/Cray-HPE/cray-product-install-charts for this release and prior.
 
 
-[Unreleased]: https://github.com/Cray-HPE/cray-import-kiwi-recipe-image/compare/v3.0.1...HEAD
+[Unreleased]: https://github.com/Cray-HPE/cray-import-kiwi-recipe-image/compare/v3.0.2...HEAD
+
+[3.0.2]: https://github.com/Cray-HPE/cray-import-kiwi-recipe-image/compare/v3.0.1...v3.0.2
 
 [3.0.1]: https://github.com/Cray-HPE/cray-import-kiwi-recipe-image/compare/v3.0.0...v3.0.1
 
