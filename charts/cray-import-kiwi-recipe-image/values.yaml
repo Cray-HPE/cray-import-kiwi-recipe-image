@@ -71,7 +71,7 @@ import_job:
 
   CREATE_BOS_SESSION_TEMPLATE: "False"
   BOS_URL: "http://cray-bos"
-  BOS_SESSION_ENDPOINT: "v1/sessiontemplate"
+  BOS_SESSIONTEMPLATES_ENDPOINT: "v2/sessiontemplates"
   BOS_KERNEL_PARAMETERS: >-
     console=ttyS0,115200 bad_page=panic crashkernel=340M hugepagelist=2m-2g intel_iommu=off intel_pstate=disable
     iommu=pt ip=dhcp numa_interleave_omit=headless numa_zonelist_order=node oops=panic pageblock_order=14
