@@ -7,6 +7,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 - Update license text to comply with automatic license-check tool.
 
+- Utilize BOS Version 2 (BOS V2) endpoint for session templates. Further, change the variable name from BOS_SESSION_ENDPOINT to BOS_SESSIONTEMPLATES_ENDPOINT.
+	
 ## [3.0.2] - 2022-03-04
 
 ### Changed
