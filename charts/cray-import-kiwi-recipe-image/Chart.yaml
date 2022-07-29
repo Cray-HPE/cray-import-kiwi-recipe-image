@@ -23,7 +23,7 @@
 #
 apiVersion: v2
 name: cray-import-kiwi-recipe-image
-version: 2.1.0
+version: 3.0.0
 description: Base chart for importing Cray-authored Kiwi Descriptions and images into
   IMS/S3 on Shasta systems.
 keywords:
@@ -35,10 +35,8 @@ home: https://github.com/Cray-HPE/cray-product-install-charts
 sources:
 - https://github.com/Cray-HPE/cray-product-install-charts
 maintainers:
-- email: randy.kleinman@hpe.com
-  name: rkleinman-hpe
-- email: eric.cozzi@hpe.com
-  name: ecozzi-hpe
+- email: jason.sollom@hpe.com
+  name: jsollom-hpe
 annotations:
   artifacthub.io/images: |
     - name: cray-product-catalog-update
