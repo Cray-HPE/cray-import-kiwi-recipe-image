@@ -5,6 +5,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ## [Unreleased]
 
+## [3.1.0] - 2022-08-02
+
 ### Changed
 - Reverted github workflows back to Jenkins pipelines.
 - Update license text to comply with automatic license-check tool.
