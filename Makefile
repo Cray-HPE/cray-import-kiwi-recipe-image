@@ -1,7 +1,7 @@
 #
 # MIT License
 #
-# (C) Copyright 2021-2022 Hewlett Packard Enterprise Development LP
+# (C) Copyright 2021-2023 Hewlett Packard Enterprise Development LP
 #
 # Permission is hereby granted, free of charge, to any person obtaining a
 # copy of this software and associated documentation files (the "Software"),
@@ -27,17 +27,14 @@
 
 CHART_PATH ?= charts
 
-IMPORT_CONFIG_CHART_NAME ?= "cray-import-config"
 IMPORT_KIWI_RECIPE_IMAGE_CHART_NAME ?= "cray-import-kiwi-recipe-image"
-
-IMPORT_CONFIG_CHART_VERSION ?= local
 IMPORT_KIWI_RECIPE_IMAGE_CHART_VERSION ?= local
 
 HELM_UNITTEST_IMAGE ?= quintush/helm-unittest:3.3.0-0.2.5
 
 all: runbuildprep lint chart_setup test package
 
-test: import_config_test import_kiwi_recipe_image_test
+test: import_kiwi_recipe_image_test
 package: import_kiwi_recipe_image_package
 
 runbuildprep:
@@ -48,10 +45,6 @@ lint:
 
 chart_setup:
 		mkdir -p ${CHART_PATH}/.packaged
-
-import_config_test:
-		helm lint "${CHART_PATH}/${IMPORT_CONFIG_CHART_NAME}"
-		docker run --rm -v ${PWD}/${CHART_PATH}:/apps ${HELM_UNITTEST_IMAGE} -3 ${IMPORT_CONFIG_CHART_NAME}
 
 import_kiwi_recipe_image_test:
 		helm lint "${CHART_PATH}/${IMPORT_KIWI_RECIPE_IMAGE_CHART_NAME}"
