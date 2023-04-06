@@ -34,11 +34,6 @@ keywords:
 home: https://github.com/Cray-HPE/cray-product-install-charts
 sources:
 - https://github.com/Cray-HPE/cray-product-install-charts
-maintainers:
-- email: randy.kleinman@hpe.com
-  name: rkleinman-hpe
-- email: eric.cozzi@hpe.com
-  name: ecozzi-hpe
 annotations:
   artifacthub.io/images: |
     - name: cray-product-catalog-update

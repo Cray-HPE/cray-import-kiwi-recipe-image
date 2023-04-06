@@ -12,7 +12,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 - Finished conversion to GitVersion; modified build and versioning process to match other CMS repositories.
 
 ### Removed
-- Remove references to import-config chart which was removed long ago.
+- Removed references to import-config chart which was removed long ago.
+- Removed outdated maintainers information from chart.
 
 ## [3.0.2] - 2022-03-04
 
