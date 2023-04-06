@@ -5,9 +5,23 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ## [Unreleased]
 
+## [3.2.0] - 2023-04-06
+
+### Changed
+
+- Reverted github workflows back to Jenkins pipelines.
+- Finished conversion to GitVersion; modified build and versioning process to match other CMS repositories.
+- Update to cray-product-catalog-update version 1.8.x
+
+### Removed
+
+- Removed references to import-config chart which was removed long ago.
+- Removed outdated maintainers information from chart.
+
 ## [3.1.0] - 2022-08-02
 
 ### Changed
+
 - Update license text to comply with automatic license-check tool.
 - CASMCMS-7970 - update dev.cray.com addresses.
 

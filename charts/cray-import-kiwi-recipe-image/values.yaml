@@ -1,7 +1,7 @@
 #
 # MIT License
 #
-# (C) Copyright 2022 Hewlett Packard Enterprise Development LP
+# (C) Copyright 2022-2023 Hewlett Packard Enterprise Development LP
 #
 # Permission is hereby granted, free of charge, to any person obtaining a
 # copy of this software and associated documentation files (the "Software"),
@@ -41,7 +41,7 @@ import_image:
 catalog:
   image:
     repository: artifactory.algol60.net/csm-docker/stable/cray-product-catalog-update
-    tag: 1.5.2
+    tag: 0.0.0-cpc
     pullPolicy: IfNotPresent
 
   config_map: cray-product-catalog

@@ -1,7 +1,7 @@
 #
 # MIT License
 #
-# (C) Copyright 2022 Hewlett Packard Enterprise Development LP
+# (C) Copyright 2022-2023 Hewlett Packard Enterprise Development LP
 #
 # Permission is hereby granted, free of charge, to any person obtaining a
 # copy of this software and associated documentation files (the "Software"),
@@ -23,7 +23,7 @@
 #
 apiVersion: v2
 name: cray-import-kiwi-recipe-image
-version: 2.1.0
+version: 0.0.0-chart
 description: Base chart for importing Cray-authored Kiwi Descriptions and images into
   IMS/S3 on Shasta systems.
 keywords:
@@ -32,15 +32,17 @@ keywords:
 - images
 - kiwi
 home: https://github.com/Cray-HPE/cray-product-install-charts
+maintainers:
+- name: mharding-hpe
+  email: mitchell.harding@hpe.com
+  url: https://github.com/orgs/Cray-HPE/teams/cray-management-systems
+- name: dlaine-hpe
+  email: laine@hpe.com
+  url: https://github.com/orgs/Cray-HPE/teams/cray-management-systems
 sources:
 - https://github.com/Cray-HPE/cray-product-install-charts
-maintainers:
-- email: randy.kleinman@hpe.com
-  name: rkleinman-hpe
-- email: eric.cozzi@hpe.com
-  name: ecozzi-hpe
 annotations:
   artifacthub.io/images: |
     - name: cray-product-catalog-update
-      image: artifactory.algol60.net/csm-docker/stable/cray-product-catalog-update:1.5.2
+      image: artifactory.algol60.net/csm-docker/stable/cray-product-catalog-update:0.0.0-cpc
   artifacthub.io/license: MIT
