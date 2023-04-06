@@ -2,7 +2,7 @@
  *
  *  MIT License
  *
- *  (C) Copyright 2021-2022 Hewlett Packard Enterprise Development LP
+ *  (C) Copyright 2021-2023 Hewlett Packard Enterprise Development LP
  *
  *  Permission is hereby granted, free of charge, to any person obtaining a
  *  copy of this software and associated documentation files (the "Software"),
@@ -48,9 +48,7 @@ pipeline {
     environment {
         DESCRIPTION = "Helm charts for product installation on CSM systems."
         IS_STABLE = isStable()
-
         IMPORT_KIWI_RECIPE_IMAGE_CHART_NAME = "cray-import-kiwi-recipe-image"
-        IMPORT_KIWI_RECIPE_IMAGE_CHART_VERSION = getChartVersion(chartDirectory: 'charts', name: env.IMPORT_KIWI_RECIPE_IMAGE_CHART_NAME, isStable: env.IS_STABLE)
     }
 
     stages {
@@ -60,13 +58,19 @@ pipeline {
                 cloneCMSMetaTools()
             }
         }
-
-        stage("runBuildPrep") {
+        stage("Set Versions") {
             steps {
-                sh "make runbuildprep"
+                // This function is defined in cms-meta-tools:vars/setVersionFiles.groovy
+                setVersionFiles()
             }
         }
-
+        stage("runBuildPrep") {
+            steps {
+                withCredentials([usernamePassword(credentialsId: 'artifactory-algol60-readonly', passwordVariable: 'ARTIFACTORY_PASSWORD', usernameVariable: 'ARTIFACTORY_USERNAME')]) {
+                    sh "make runbuildprep"
+                }
+            }
+        }
         stage("Lint") {
             steps {
                 sh "make lint"
@@ -74,24 +78,36 @@ pipeline {
         }
 
         stage("Prepare") {
+            environment {
+                IMPORT_KIWI_RECIPE_IMAGE_CHART_VERSION = sh(returnStdout: true, script: "head -1 .chart_version").trim()
+            }
             steps {
                 sh "make chart_setup"
             }
         }
 
         stage("Test") {
+            environment {
+                IMPORT_KIWI_RECIPE_IMAGE_CHART_VERSION = sh(returnStdout: true, script: "head -1 .chart_version").trim()
+            }
             steps {
                 sh "make import_kiwi_recipe_image_test"
             }
         }
 
         stage("Package") {
+            environment {
+                IMPORT_KIWI_RECIPE_IMAGE_CHART_VERSION = sh(returnStdout: true, script: "head -1 .chart_version").trim()
+            }
             steps {
                 sh "make import_kiwi_recipe_image_package"
             }
         }
 
         stage("Publish") {
+            environment {
+                IMPORT_KIWI_RECIPE_IMAGE_CHART_VERSION = sh(returnStdout: true, script: "head -1 .chart_version").trim()
+            }
             steps {
                 publishCsmHelmCharts(component: env.IMPORT_KIWI_RECIPE_IMAGE_CHART_NAME, chartsPattern: "${env.IMPORT_KIWI_RECIPE_IMAGE_CHART_NAME}*.tgz", chartsPath: "${WORKSPACE}/charts/.packaged", isStable: env.IS_STABLE)
             }
