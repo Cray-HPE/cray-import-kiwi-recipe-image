@@ -32,6 +32,8 @@ keywords:
 - images
 - kiwi
 home: https://github.com/Cray-HPE/cray-product-install-charts
+maintainers:
+  - name: Cray-HPE/teams/cray-management-systems
 sources:
 - https://github.com/Cray-HPE/cray-product-install-charts
 annotations:
