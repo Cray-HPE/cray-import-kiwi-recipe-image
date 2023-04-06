@@ -9,6 +9,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 - Reverted github workflows back to Jenkins pipelines.
 - Finished conversion to GitVersion; modified build and versioning process to match other CMS repositories.
+- Update to cray-product-catalog-update version 1.8.x
 
 ### Removed
 
