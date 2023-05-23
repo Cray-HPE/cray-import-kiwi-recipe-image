@@ -61,8 +61,11 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 - See https://github.com/Cray-HPE/cray-product-install-charts for this release and prior.
 
+[Unreleased]: https://github.com/Cray-HPE/cray-import-kiwi-recipe-image/compare/v3.2.0...HEAD
 
-[Unreleased]: https://github.com/Cray-HPE/cray-import-kiwi-recipe-image/compare/v3.0.2...HEAD
+[3.2.0]: https://github.com/Cray-HPE/cray-import-kiwi-recipe-image/compare/v3.1.0...v3.2.0
+
+[3.1.0]: https://github.com/Cray-HPE/cray-import-kiwi-recipe-image/compare/v3.0.2...v3.1.0
 
 [3.0.2]: https://github.com/Cray-HPE/cray-import-kiwi-recipe-image/compare/v3.0.1...v3.0.2
 
