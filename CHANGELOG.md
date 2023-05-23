@@ -25,10 +25,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 ## [3.1.0] - 2022-08-02
 
 ### Changed
+
 - Update license text to comply with automatic license-check tool.
 - CASMCMS-7970 - update dev.cray.com addresses.
 
-	
 ## [3.0.2] - 2022-03-04
 
 ### Changed
