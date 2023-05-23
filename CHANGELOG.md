@@ -5,6 +5,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ## [Unreleased]
 
+### Changed
+
+- Utilize BOS Version 2 (BOS V2) endpoint for session templates. Further, change the variable name from `BOS_SESSION_ENDPOINT` to `BOS_SESSIONTEMPLATES_ENDPOINT`.
+
 ## [3.2.0] - 2023-04-06
 
 ### Changed
