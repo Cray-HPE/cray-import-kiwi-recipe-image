@@ -5,6 +5,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ## [Unreleased]
 
+## [4.0.0] - 2023-05-23
+
 ### Changed
 
 - Utilize BOS Version 2 (BOS V2) endpoint for session templates. Further, change the variable name from `BOS_SESSION_ENDPOINT` to `BOS_SESSIONTEMPLATES_ENDPOINT`.
@@ -65,7 +67,9 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 - See https://github.com/Cray-HPE/cray-product-install-charts for this release and prior.
 
-[Unreleased]: https://github.com/Cray-HPE/cray-import-kiwi-recipe-image/compare/v3.2.0...HEAD
+[Unreleased]: https://github.com/Cray-HPE/cray-import-kiwi-recipe-image/compare/v4.0.0...HEAD
+
+[4.0.0]: https://github.com/Cray-HPE/cray-import-kiwi-recipe-image/compare/v3.2.0...v4.0.0
 
 [3.2.0]: https://github.com/Cray-HPE/cray-import-kiwi-recipe-image/compare/v3.1.0...v3.2.0
 
