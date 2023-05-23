@@ -39,6 +39,9 @@ maintainers:
 - name: dlaine-hpe
   email: laine@hpe.com
   url: https://github.com/orgs/Cray-HPE/teams/cray-management-systems
+- name: jsollom-hpe
+  email: jason.sollom@hpe.com
+  url: https://github.com/orgs/Cray-HPE/teams/cray-management-systems
 sources:
 - https://github.com/Cray-HPE/cray-product-install-charts
 annotations:
