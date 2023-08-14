@@ -122,8 +122,8 @@ spec:
 
         - name: BOS_URL
           value: "{{ .Values.import_job.BOS_URL }}"
-        - name: BOS_SESSION_ENDPOINT
-          value: "{{ .Values.import_job.BOS_SESSION_ENDPOINT }}"
+        - name: BOS_SESSIONTEMPLATES_ENDPOINT
+          value: "{{ .Values.import_job.BOS_SESSIONTEMPLATES_ENDPOINT }}"
         - name: BOS_KERNEL_PARAMETERS
           value: "{{ .Values.import_job.BOS_KERNEL_PARAMETERS }}"
         - name: BOS_ROOTFS_PROVIDER
