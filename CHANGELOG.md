@@ -5,7 +5,15 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ## [Unreleased]
 
+### Changed
+
+- Disabled concurrent Jenkins builds on same branch/commit
+- Added build timeout to avoid hung builds
+
 ## [4.1.0] - 2023-08-14
+
+### Fixed
+
 - CASMCMS-8743 - fix BOS V2 session endpoint template generation.
 
 ## [4.0.0] - 2023-05-23
