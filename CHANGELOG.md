@@ -10,6 +10,9 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 - Disabled concurrent Jenkins builds on same branch/commit
 - Added build timeout to avoid hung builds
 
+### Dependencies
+- Bump `actions/checkout` from 3 to 4 ([#34](https://github.com/Cray-HPE/cray-import-kiwi-recipe-image/pull/34))
+
 ## [4.1.0] - 2023-08-14
 
 ### Fixed
