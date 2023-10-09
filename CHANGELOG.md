@@ -12,6 +12,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ### Dependencies
 - Bump `actions/checkout` from 3 to 4 ([#34](https://github.com/Cray-HPE/cray-import-kiwi-recipe-image/pull/34))
+- Bump `stefanzweifel/git-auto-commit-action` from 4 to 5 ([#35](https://github.com/Cray-HPE/cray-import-kiwi-recipe-image/pull/35))
 
 ## [4.1.0] - 2023-08-14
 
