@@ -5,7 +5,23 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ## [Unreleased]
 
+## [4.2.0] - 2023-11-29
+
+### Changed
+
+- Disabled concurrent Jenkins builds on same branch/commit
+- Added build timeout to avoid hung builds
+
+### Dependencies
+
+- Bump `actions/checkout` from 3 to 4 ([#34](https://github.com/Cray-HPE/cray-import-kiwi-recipe-image/pull/34))
+- Bump `stefanzweifel/git-auto-commit-action` from 4 to 5 ([#35](https://github.com/Cray-HPE/cray-import-kiwi-recipe-image/pull/35))
+- Bump `cray-product-catalog` from 1.8 to 1.9
+
 ## [4.1.0] - 2023-08-14
+
+### Fixed
+
 - CASMCMS-8743 - fix BOS V2 session endpoint template generation.
 
 ## [4.0.0] - 2023-05-23
@@ -70,7 +86,11 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 - See https://github.com/Cray-HPE/cray-product-install-charts for this release and prior.
 
-[Unreleased]: https://github.com/Cray-HPE/cray-import-kiwi-recipe-image/compare/v4.0.0...HEAD
+[Unreleased]: https://github.com/Cray-HPE/cray-import-kiwi-recipe-image/compare/v4.2.0...HEAD
+
+[4.2.0]: https://github.com/Cray-HPE/cray-import-kiwi-recipe-image/compare/v4.1.0...v4.2.0
+
+[4.1.0]: https://github.com/Cray-HPE/cray-import-kiwi-recipe-image/compare/v4.0.0...v4.1.0
 
 [4.0.0]: https://github.com/Cray-HPE/cray-import-kiwi-recipe-image/compare/v3.2.0...v4.0.0
 
