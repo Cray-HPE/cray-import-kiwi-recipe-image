@@ -5,6 +5,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ## [Unreleased]
 
+## [4.4.0] - 2024-02-08
+
+### Dependencies
+
+- Bump `cray-product-catalog` from 1.10 to 2.0 for CSM 1.6
+
 ## [4.3.0] - 2023-11-29
 
 ### Dependencies
@@ -92,7 +98,9 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 - See https://github.com/Cray-HPE/cray-product-install-charts for this release and prior.
 
-[Unreleased]: https://github.com/Cray-HPE/cray-import-kiwi-recipe-image/compare/v4.3.0...HEAD
+[Unreleased]: https://github.com/Cray-HPE/cray-import-kiwi-recipe-image/compare/v4.4.0...HEAD
+
+[4.4.0]: https://github.com/Cray-HPE/cray-import-kiwi-recipe-image/compare/v4.3.0...v4.4.0
 
 [4.3.0]: https://github.com/Cray-HPE/cray-import-kiwi-recipe-image/compare/v4.2.0...v4.3.0
 
