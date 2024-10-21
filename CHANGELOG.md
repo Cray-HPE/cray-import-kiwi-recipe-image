@@ -5,6 +5,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ## [Unreleased]
 
+### Dependencies
+
+- Bump `cray-product-catalog` from 2.3 to 2.5 for CSM 1.6
+
 ## [4.4.2] - 2024-07-16
 
 ### Dependencies
