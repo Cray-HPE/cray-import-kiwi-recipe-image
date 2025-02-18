@@ -5,6 +5,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ## [Unreleased]
 
+## [4.5.0] - 2025-02-18
+
+### Dependencies
+
+- CASMCMS-9282: Bump `cray-product-catalog` from 2.5 to 2.7 for CSM 1.7
+
 ## [4.4.3] - 2024-09-16
 
 ### Dependencies
