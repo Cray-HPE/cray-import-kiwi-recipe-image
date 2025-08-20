@@ -5,6 +5,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ## [Unreleased]
 
+### Dependencies
+
+- Bump `actions/checkout` from 4 to 5 ([#51](https://github.com/Cray-HPE/cray-import-kiwi-recipe-image/pull/51))
+
 ## [4.5.0] - 2025-02-18
 
 ### Dependencies
